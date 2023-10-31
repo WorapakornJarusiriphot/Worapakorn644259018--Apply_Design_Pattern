@@ -1,0 +1,106 @@
+* {
+    font-family: 'K2D', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1877f2;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.woja-section {
+    flex: 1;
+    text-align: center;
+    padding-right: 50px;
+}
+
+.woja-logo {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.woja-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.container {
+    flex: 1;
+    padding-left: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    color: black;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.mb-3 label {
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+.form-control {
+    height: 40px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    background-color: #1877f2;
+    border-color: #1877f2;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 6px;
+    color: white;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+}
+
+a {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+/* สำหรับขนาดหน้าจอที่เล็กลง (โทรศัพท์มือถือ และแท็บเล็ต) */
+@media (max-width: 992px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
+
+/* สำหรับขนาดหน้าจอที่ใหญ่ขึ้น (คอมพิวเตอร์) */
+@media (min-width: 993px) {
+    .main-container {
+        flex-direction: row;
+    }
+}
